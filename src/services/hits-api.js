@@ -14,7 +14,6 @@ const fetchHits = ({ searchQuery = '',  page = 1, perPage = 12}) =>{
             page:page,
             per_page:perPage
         }})
-        // .get(`https://pixabay.com/api/?q=${searchQuery}&page=${page}&key=${API_KEY}&image_type=photo&orientation=horizontal&per_page=${perPage}`)
         .then(response => response.data.hits)
 
 }
